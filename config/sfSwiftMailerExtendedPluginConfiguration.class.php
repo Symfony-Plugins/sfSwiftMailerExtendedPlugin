@@ -14,7 +14,7 @@
  * @package    sfSwiftMailerExtendedPluginConfiguration
  * @subpackage config
  * @author     Markus Welter <markus@welante.ch>
- * @version    SVN: $Id: sfSwiftMailerExtendedPluginConfiguration.class.php 1 2011-01-19 17:30:00Z markus $
+ * @version    SVN: $Id$
  */
 class sfSwiftMailerExtendedPluginConfiguration extends sfPluginConfiguration
 {

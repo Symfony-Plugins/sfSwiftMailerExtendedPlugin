@@ -16,7 +16,7 @@
  * @package    sfSwiftMailerExtendedPlugin
  * @subpackage mailer
  * @author     Markus Welter <markus@welante.ch>
- * @version    SVN: $Id: sfMailerExtended.class.php 1 2011-01-19 17:30:00Z markus $
+ * @version    SVN: $Id$
  */
 class sfMailerExtended extends sfMailer
 {

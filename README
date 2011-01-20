@@ -31,7 +31,7 @@ Installation
 
 * Or install the plugin
 
-        $ svn co http//svn.symfony-project.com/plugins/sfSwiftMailerExtendedPlugin/trunk plugins/sfSwiftMailerExtendedPlugin
+        $ svn co http://svn.symfony-project.com/plugins/sfSwiftMailerExtendedPlugin/trunk plugins/sfSwiftMailerExtendedPlugin
 
 
 * Activate the plugin in the `config/ProjectConfiguration.class.php`
