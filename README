@@ -29,7 +29,7 @@ Installation
         $ symfony plugin:install sfSwiftMailerExtendedPlugin
 
 
-* Or install the plugin
+* Or (via svn)
 
         $ svn co http://svn.symfony-project.com/plugins/sfSwiftMailerExtendedPlugin/trunk plugins/sfSwiftMailerExtendedPlugin
 
@@ -71,7 +71,7 @@ Installation
                    encryption: ~
                    username:   ~
                    password:   ~
-                     fallback:   local
+                   fallback:   local
                gmail:
                  class: Swift_SmtpTransport
                  param:
@@ -80,7 +80,7 @@ Installation
                    encryption: ~
                    username:   ~
                    password:   ~
-                     fallback:   gmail
+                   fallback:   gmail
 
 
 * Clear the cache
