@@ -153,7 +153,7 @@ class sfMailerExtended extends sfMailer
     }
     catch(Exception $e)
     {
-      sfContext::getInstance()->getLogger()->info('Error sending mail with transport '.$transportName . ' attempt ' . $this->retries . ' of ' . $this->maxRetries);
+      sfContext::getInstance()->getLogger()->info('Error sending mail with transport '.$transportName . ' attempt ' . $this->retries . ' of ' . $this->maxRetries . '. Reason: ' . $e->getMessage());
       if($this->retries < $this->maxRetries)
       {
         $fallBack = $this->transports[$this->curTransport]['param']['fallback'];
@@ -161,9 +161,8 @@ class sfMailerExtended extends sfMailer
       }
       else
       {
-        sfContext::getInstance()->getLogger()->info('Error sending mail after ' . $this->retries . ' retries');
         $this->retries = 0;
-        throw new Exception('sfSwiftMailerExtendedPlugin error: ' . $e->getMessage());
+        throw new Exception('sfSwiftMailerExtendedPlugin error: Error sending mail after ' . $this->retries . ' retries');
       }
     }
     return $ret;
